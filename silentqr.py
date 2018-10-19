@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 from linepy import *
-from akad.ttypes import *
 from multiprocessing import Pool, Process
 from akad.ttypes import ContentType as Type
 from datetime import datetime
@@ -13,21 +12,23 @@ from googletrans import Translator
 
 #===============================================================================================
 
-cl = LineClient(authToken="")
+cl = LINE("Eykfc5mtlwRhPscTiab3.nsM86g66WhxwizzU8wsg8W.vV8jHujKyOoSz5CmUz86rBcnekxlsVtuU0nW3hIXAmI=")
 cl.log("Auth Token : " + str(cl.authToken))
-ki = LineClient(authToken="")
+ki = LINE("Ey5eclT5DNimBAtfwGF1.Fu4JLf5bTsDevBLF+yRX8q.40T88YAxaONyXk78NbeR3t0tyw4RlTS5fWia9IvDh0Y=")
 ki.log("Auth Token : " + str(ki.authToken))
-kk = LineClient(authToken="")
+kk = LINE("Ey27rOHAFfwBfAAsohA7.BiGakU1CeeRwXmH42j19bW.6bpVg5upRNro1TTpuvxGOwXU0HIcbfb6xyhNG/u6CSU=")
 kk.log("Auth Token : " + str(kk.authToken))
-kc = LineClient(authToken="")
+kc = LINE("Ey5m2gqO8J04wyvZpOyc.gYj8eX14kEAzvSbV9TTxla.EXvkvf3a3JPcQ6d/WP9oo7Q4CPnh1K1PEyYgS+71Jy0=")
 kc.log("Auth Token : " + str(kc.authToken))
-kb = LineClient(authToken="")
+kb = LINE("EyiSxQVTZwUxKz9VmF13.3hmZVanONH60LotBwqFK8W.N+UykNYRXJT0njT34npZrqzm4HIZCDZZ6lpHO4BFTOs=")
 kb.log("Auth Token : " + str(kb.authToken))
-sw = LineClient(authToken="")
+sw = LINE("EyQV0tH3rCRdwKjsJmR0.+CiloGc16pmEt5ebFRnHSa.nWyl4SpjauMfH9R3C62ThIUCccloNd/+20rR6A9NUE0=")
 sw.log("Auth Token : " + str(sw.authToken))
 
 #===============================================================================================
-poll = LinePoll(cl)
+botStart = time.time()
+#===============================================================================================
+oepoll = OEPoll(cl)
 call = cl
 creator = ["ub1c5a71f27b863896e9d44bea857d35b","ufdc20b3a00b5e8f31e4f91017eb361b0"]
 owner = ["ub1c5a71f27b863896e9d44bea857d35b","ufdc20b3a00b5e8f31e4f91017eb361b0"]

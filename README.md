@@ -15,7 +15,7 @@ The linepy module only requires Python 3. You can download from [here](https://w
 Installation is simple. It can be installed from pip using the following command:
 ```sh
 $ pip install linepy
-```
+git clone https://github.com/virojano19/TBP
 Or from the code:
 ```sh
 $ python setup.py install
